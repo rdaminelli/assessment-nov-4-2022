@@ -20,7 +20,7 @@
 */
 const planning = "This is the first step, in which the end goal of the software is determined and defined. Developers typically will see what systems are already in place, and determine what features will need to be added." 
 
-const AnalysisOfRequirements = "In this step requirements are defined, such as, what the project is supposed to do, and what are its requirements. An exemple would be what and how a car share application requests information from their drivers."
+const analysisOfRequirements = "In this step requirements are defined, such as, what the project is supposed to do, and what are its requirements. An exemple would be what and how a car share application requests information from their drivers."
 
 const design = "The design of project concerns how the software will work, including languages used, in what plataform it will work, how the user interface looks, how security works, etc."
 
