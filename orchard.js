@@ -49,8 +49,11 @@ const pinkPrice = .55
     Log `totalAcres` to the console.
 */
 
-// CODE HERE
-
+var totalAcres = 0;  //initializes total of acres with zero
+for (let i = 0; i < 7; i++){  //creates a for loop with seven iterations one for each day of the week
+    totalAcres = totalAcres + fujiAcres[i] + galaAcres[i] + pinkAcres[i]; // in each iteration, it adds to total acres, the amount of acres in all three lists, one week day at a time(each iteration)
+}
+console.log(totalAcres); //returns the total
 
 
 
@@ -67,7 +70,8 @@ const pinkPrice = .55
     Log `averageDailyAcres` to the console.
 */
 
-// CODE HERE
+var averageDailyAcres = totalAcres / 7;
+console.log(averageDailyAcres);
 
 
 
@@ -105,8 +109,11 @@ const pinkPrice = .55
 let acresLeft = 174 
 let days = 0
 
-// CODE HERE
-
+while (acresLeft > 0){
+    days++;
+    acresLeft -= averageDailyAcres;
+}
+console.log(days);
 
 
 // PROBLEM 4
@@ -135,9 +142,24 @@ let days = 0
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+let fujiTons = [];
+for (let i = 0; i < 7; i++){
+    fujiTons.push(fujiAcres[i]*6.5);
+}
+console.log(fujiTons);
+
+let galaTons = [];
+for (let i = 0; i < 7; i++){
+    galaTons.push(galaAcres[i]*6.5);
+}
+console.log(galaTons);
+
+let pinkTons = [];
+for (let i = 0; i < 7; i++){
+    pinkTons.push(pinkAcres[i]*6.5);
+}
+console.log(pinkTons);
+
 
 
 
@@ -159,13 +181,24 @@ let days = 0
 
     Hint: there are 2000 pounds in a ton.
 */
+let fujiPounds = 0;
+let galaPounds = 0;
+let pinkPounds = 0;
 
-// CODE HERE 
+for (let i = 0; i < 7; i++){
+    fujiPounds = fujiPounds + fujiTons[i] *2000;
+} 
+console.log(fujiPounds);
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+for (let i = 0; i < 7; i++){
+    galaPounds = galaPounds + galaTons[i] *2000;
+} 
+console.log(galaPounds);
 
+for (let i = 0; i < 7; i++){
+    pinkPounds = pinkPounds + pinkTons[i] *2000;
+} 
+console.log(pinkPounds);
 
 
 
@@ -189,9 +222,9 @@ let days = 0
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = fujiPounds * fujiPrice;
+let galaProfit = galaPounds * galaPrice;
+let pinkProfit = pinkPounds 
 
 
 

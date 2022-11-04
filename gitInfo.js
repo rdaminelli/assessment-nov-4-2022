@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-//CODE HERE
+const gitDefinition = "Git is a program. Git is a system to control software versions. Git lets teams and individuals work together while tracking changes to the software project. Git prevents bugs and processes losses by saving previous versions. Git lets its users see and recover the progress of a software projet"
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +17,7 @@
     It should be a string containing your best definition of what GitHub is.
 */
 
-//CODE HERE
+const gitHubDefinition = "Github is a website that lets its users save and retrieve git repositories, it works as a cloud service for git."
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -25,7 +25,7 @@
     It should be a string containing your best definition of what 'git init' does.
 */
 
-//CODE HERE
+const gitInitDefinition = "'git init' is the command use to initialize a git repository in the current folder."
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -33,7 +33,7 @@
     It should be a string containing your best definition of what 'git clone' does.
 */
 
-//CODE HERE
+const gitCloneDefinition = "'git clone' is the command to create a copy of an existing repository. The sintax is 'git clone <url>'."
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -41,7 +41,7 @@
     It should be a string containing your best definition of what 'git status' does.
 */
 
-//CODE HERE
+const gitStatusDefinition = "'git status' is the command to get basic information about the current repository."
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -52,7 +52,7 @@
     It should be a string containing the code to add all files.
 */
 
-//CODE HERE
+const gitAddDefinition = "The command 'git add' instructs the computer to track files in the repository."
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -63,8 +63,7 @@
     It should be a string containing the code to commit using the message "initial commit".
 */
 
-//CODE HERE
-
+const gitCommitDefinition = "The command 'git command' creates a snapshot of tracked files."
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -72,4 +71,4 @@
     It should be a string containing your best definition of what 'git push' does.
 */
 
-//CODE HERE
+const gitPushDefinition ="'git push' is the command to save the contents of a local repository into a remote one."
