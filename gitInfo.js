@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-const gitDefinition = "Git is a program. Git is a system to control software versions. Git lets teams and individuals work together while tracking changes to the software project. Git prevents bugs and processes losses by saving previous versions. Git lets its users see and recover the progress of a software projet"
+const gitDefinition = "Git is a program. Git is a system to control software versions. Git lets teams and individuals work together while tracking changes to the software project. Git prevents bugs and process losses by saving previous versions. Git lets its users see and recover the progress of a software projet."
 
 //////////////////PROBLEM 2////////////////////
 /*
