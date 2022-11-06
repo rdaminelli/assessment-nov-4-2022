@@ -138,8 +138,7 @@ let fujiTons = [];
 let galaTons = [];
 let pinkTons = [];
 
-for (let i = 0; i < 7; i++) {
-  //stars a for loop to iterate 7 times
+for (let i = 0; i < 7; i++) {        //stars a for loop to iterate 7 times
   fujiTons.push(fujiAcres[i] * 6.5); // adds the items from the array fujiAcreas into fujiTons multipling it by 6.5
   galaTons.push(galaAcres[i] * 6.5);
   pinkTons.push(pinkAcres[i] * 6.5);
