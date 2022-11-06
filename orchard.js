@@ -27,15 +27,13 @@
     in cents. 
 */
 
-const fujiAcres = [2, 3, 3, 2, 2, 2, 1]
-const galaAcres = [5, 2, 4, 3, 6, 2, 4]
-const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
+const fujiAcres = [2, 3, 3, 2, 2, 2, 1];
+const galaAcres = [5, 2, 4, 3, 6, 2, 4];
+const pinkAcres = [1, 5, 4, 2, 1, 5, 4];
 
-const fujiPrice = .89 
-const galaPrice = .64
-const pinkPrice = .55
-
-
+const fujiPrice = 0.89;
+const galaPrice = 0.64;
+const pinkPrice = 0.55;
 
 // PROBLEM 1
 
@@ -49,14 +47,12 @@ const pinkPrice = .55
     Log `totalAcres` to the console.
 */
 
-var totalAcres = 0;                                                       //initializes total of acres with zero
-for (let i = 0; i < 7; i++){                                              //creates a for loop with seven iterations one for each day of the week. If I didnt know the length of the list I could use: "for (let i = 0; i < fujiAcres.length; i++)".
-    totalAcres = totalAcres + fujiAcres[i] + galaAcres[i] + pinkAcres[i]; // in each iteration, it adds to total acres, the amount of acres in all three lists, one week day at a time(each iteration).
+var totalAcres = 0; //initializes total of acres with zero
+for (let i = 0; i < 7; i++) {
+  //creates a for loop with seven iterations one for each day of the week. If I didnt know the length of the list I could use: "for (let i = 0; i < fujiAcres.length; i++)".
+  totalAcres = totalAcres + fujiAcres[i] + galaAcres[i] + pinkAcres[i]; //it adds to total acres the amount of acres in all three lists using its indexes for reference(one iteration at a time)
 }
-console.log(totalAcres);                                                  //returns the total
-
-
-
+console.log(totalAcres); //returns the total
 
 // PROBLEM 2
 
@@ -70,12 +66,8 @@ console.log(totalAcres);                                                  //retu
     Log `averageDailyAcres` to the console.
 */
 
-var averageDailyAcres = totalAcres / 7;     //divides the total acres by 7, to find the daily average.
-console.log(averageDailyAcres);             //prints out the daily average
-
-
-
-
+var averageDailyAcres = totalAcres / 7; //divides the total acres by 7, to find the daily average.
+console.log(averageDailyAcres); //prints out the daily average
 
 // PROBLEM 3
 
@@ -106,15 +98,15 @@ console.log(averageDailyAcres);             //prints out the daily average
 
 */
 
-let acresLeft = 174 
-let days = 0
+let acresLeft = 174;
+let days = 0;
 
-while (acresLeft > 0){               //repeats the comand between curly brakets untin the condition between parenthesis becomes not true.
-    days++;                          //adds 1 to variable days in each iteration
-    acresLeft -= averageDailyAcres;  //subtracts average daily acres in each iteration
+while (acresLeft > 0) {
+  //repeats the comand between curly brakets until the condition between parenthesis becomes not true.
+  days++; //adds 1 to variable days in each iteration
+  acresLeft -= averageDailyAcres; //subtracts average daily acres in each iteration
 }
-console.log(days);                   //prints out how many days 
-
+console.log(days); //prints out how many days
 
 // PROBLEM 4
 
@@ -143,28 +135,18 @@ console.log(days);                   //prints out how many days
 // CODE HERE
 
 let fujiTons = [];
-for (let i = 0; i < 7; i++){                    //stars a for loop to iterate 7 times
-    fujiTons.push(fujiAcres[i]*6.5);            // adds the items from the array fujiAcreas into fujiTons multipling it by 6.5
-}
-console.log(fujiTons);                       
-
 let galaTons = [];
-for (let i = 0; i < 7; i++){
-    galaTons.push(galaAcres[i]*6.5);
-}
-console.log(galaTons);
-
 let pinkTons = [];
-for (let i = 0; i < 7; i++){
-    pinkTons.push(pinkAcres[i]*6.5);
+
+for (let i = 0; i < 7; i++) {
+  //stars a for loop to iterate 7 times
+  fujiTons.push(fujiAcres[i] * 6.5); // adds the items from the array fujiAcreas into fujiTons multipling it by 6.5
+  galaTons.push(galaAcres[i] * 6.5);
+  pinkTons.push(pinkAcres[i] * 6.5);
 }
+console.log(fujiTons);
+console.log(galaTons);
 console.log(pinkTons);
-
-
-
-
-
-
 
 // PROBLEM 5
 
@@ -181,28 +163,20 @@ console.log(pinkTons);
 
     Hint: there are 2000 pounds in a ton.
 */
+
 let fujiPounds = 0;
 let galaPounds = 0;
 let pinkPounds = 0;
 
-for (let i = 0; i < 7; i++){               //starts a for loop to iterate 7 times
-    fujiPounds += fujiTons[i] *2000;       //takes each item in fujiTons(using its index for reference), multiplies it by 2000 and adds it to fujiPounds   
-} 
+for (let i = 0; i < 7; i++) {
+  //starts a for loop to iterate 7 times
+  fujiPounds += fujiTons[i] * 2000; //takes each item in fujiTons(using its index for reference), multiplies it by 2000 and adds it to fujiPounds
+  galaPounds += galaTons[i] * 2000;
+  pinkPounds += pinkTons[i] * 2000;
+}
 console.log(fujiPounds);
-
-for (let i = 0; i < 7; i++){
-    galaPounds += galaTons[i] *2000;
-} 
 console.log(galaPounds);
-
-for (let i = 0; i < 7; i++){
-    pinkPounds += pinkTons[i] *2000;
-} 
 console.log(pinkPounds);
-
-
-
-
 
 // PROBLEM 6
 
@@ -220,19 +194,13 @@ console.log(pinkPounds);
     console. 
 */
 
-// CODE HERE
-
-let fujiProfit = fujiPounds * fujiPrice;      //multiply the weight in pounds of all fuji apples and multiply its price per pound.
+let fujiProfit = fujiPounds * fujiPrice; //multiply the weight in pounds of all fuji apples and multiply its price per pound.
 let galaProfit = galaPounds * galaPrice;
 let pinkProfit = pinkPounds * pinkPrice;
 
 console.log(fujiProfit);
 console.log(galaProfit);
 console.log(pinkProfit);
-
-
-
-
 
 // PROBLEM 7
 
@@ -244,5 +212,5 @@ console.log(pinkProfit);
     Log `totalProfit` to the console.
 */
 
-totalProfit = fujiProfit + galaProfit + pinkProfit;   //total profit is the sum of the profofit of each apple. 
+totalProfit = fujiProfit + galaProfit + pinkProfit; //total profit is the sum of the profofit of each apple.
 console.log(totalProfit);
