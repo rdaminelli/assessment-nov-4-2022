@@ -208,5 +208,5 @@ console.log(pinkProfit);
     Log `totalProfit` to the console.
 */
 
-totalProfit = fujiProfit + galaProfit + pinkProfit; //total profit is the sum of the profofit of each apple.
+totalProfit = fujiProfit + galaProfit + pinkProfit; //total profit is the sum of the profit of each apple.
 console.log(totalProfit);
